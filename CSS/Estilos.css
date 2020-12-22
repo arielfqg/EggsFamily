@@ -38,183 +38,50 @@ body .Footer{
 	font-family: 'Roboto';
 }
 
+.ContenidoPrincipal{
+	padding-top: 40px;
+}
+
 .TituloPrincipal{
 	font-family: 'Asap', sans-serif;
 	text-align: center;
 	font-size: 24px;
-	margin-top: 20px;
-}
-.ContenidoPrincipal #ContenidoProductos{
-	display: grid;
-	width: 98%;
-	height: 140vh;
-	grid-template-areas:
-		"BH NP NP"
-		"BH NP NP"
-		"VN NP NP"
-		"VN FV FV"
-		"PC FV FV";
-	grid-template-columns: 45% 25% 20%;
-	grid-template-rows: 25% 5% 10% 10% 50%;
-	grid-row-gap: 20px;
-	grid-column-gap: 40px;
-	margin-left: 1%;
-	justify-content: center;
-	margin-bottom: 40px;
-}
-section .BeneficiosH{
-	grid-area: BH;
-	border-radius: 40px;
-	display: flex;
-	flex-direction: column;
-}
-.TextoBH{
-	height: 70%;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	text-align: justify;
-}
-#TituloBH{
-	text-align: center;
-	font-family: 'Asap', sans-serif;
-	font-size: 18px;
-}
-.IconosBH{
-	height: 50%;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-top: 10px;
-}
-#Icono1{
-	background-color: #BBBBBB;
-	width: 20%;
-	border-radius: 20px;
-}
-#Icono2{
-	background-color: #BBBBBB;
-	width: 20%;
-	border-radius: 20px;
-}
-#Icono3{
-	background-color: #BBBBBB;
-	width: 20%;
-	border-radius: 20px;
-}
-#Icono4{
-	background-color: #BBBBBB;
-	width: 20%;
-	border-radius: 20px;
-}
-section .VNutricional{
-	grid-area: VN;
-	border-radius: 40px;
-	display: flex;
-	flex-direction: column;
-}
-#TituloVN{
-	text-align: center;
-	font-family: 'Asap', sans-serif;
-	font-size: 18px;
-}
-.ImagenVN{
-	flex-grow: 1;
-	border-radius: 40px;
-	grid-column-gap: 20px;
-	background-color: #BBBBBB;
-}
-section .PoliticaC{
-	grid-area: PC;
-	border-radius: 40px;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 40px;
-}
-#TituloPC{
-	text-align: center;
-	font-family: 'Asap', sans-serif;
-	font-size: 18px;
-}
-.ImagenPC{
-	flex-grow: 1;
-	border-radius: 40px;
-	background-color: #BBBBBB;
-}
-section .NuestrosP{
-	grid-area: NP;
-	border-radius: 40px;
-	display: flex;
-	flex-direction: column;
-}
-.ImagenesNP{
-	height: 30%;
-	margin-top: 10px;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: row;
-	grid-column-gap: 20px;
-}
-#TituloNP{
-	text-align: center;
-	font-family: 'Asap', sans-serif;
-	font-size: 18px;
-}
-#NP1{
-	flex-grow: 1;
-	background-color: #BBBBBB;
-	border-radius: 40px;
-	background-image: url("../Recursos/Huevoblanco.jpg");
-	background-size: cover;
-}
-#NP2{
-	flex-grow: 1;
-	background-color: #BBBBBB;
-	border-radius: 40px;
-	background-image: url("../Recursos/Huevocafe.jpg");
-	background-size:cover;
-}
-#NP3{
-	flex-grow: 1;
-	background-color: #BBBBBB;
-	border-radius: 40px;
-	background-image: url("../Recursos/Huevolibre.jpg");
-	background-size:cover;
-}
-section .FormatosV{
-	grid-area: FV;
-	border-radius: 40px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 	margin-bottom: 20px;
-}
-.ImagenesFV{
-	height: 30%;
-	margin-top: 10px;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-bottom: 20px;
-	grid-column-gap: 20px;
-}
-#TituloFV{
-	text-align: center;
-	font-family: 'Asap', sans-serif;
-	font-size: 18px;
-}
-#FV1{
-	flex-grow: 1;
-	background-color: #BBBBBB;
-	border-radius: 40px;
-}
-#FV2{
-	flex-grow: 1;
-	background-color: #BBBBBB;
-	border-radius: 40px;
 }
 
+#Huevo1{
+	background-image: url("../Recursos/HuevoLibre.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 300px;;
+}
+
+#Huevo2{
+	background-image: url("../Recursos/HuevoBlanco.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 300px;;
+}
+
+#Huevo3{
+	background-image: url("../Recursos/HuevoCafe.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 300px;
+}
+
+.TextoHuevo{
+	padding-top: 20px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 400;
+}
 /*--------------------------------------------------------------------------------------------------*/
 
 /* PAGINA NOSOTROS*/
