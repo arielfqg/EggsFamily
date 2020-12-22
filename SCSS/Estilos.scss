@@ -1,0 +1,381 @@
+// Scss Document
+
+$ColorLogo: #FFC200 ;
+$TextoMuyGrande: 64px;
+$TextoGrande:48px;
+$TextoMedio:32px;
+$TextoPequeno:24px;
+$TextoCuerpo:18px;
+$Negrita: 600;
+$Regular: 400;
+$Light: 300;
+$EspacioGrande: 50px;
+$EspacioMedio: 25px;
+$EspacioPequeno: 15px;
+$Cuadrado: 100px;
+
+
+
+@media (min-width: 200px) and (max-width: 575px){
+	
+.SeccionesIndex{
+	display: grid;
+	grid-template-areas:
+		"Header"
+		"TituloPrincipal"
+		"ContenidoPrincipal";
+	grid-template-columns: 100vw;
+	grid-template-rows: auto auto 50vh;
+	justify-content: center;}
+.FondoSombra{
+	background-image: url("../Recursos/Sombra7.png");
+	background-blend-mode: multiply;
+	background-position: top;
+	background-size:cover;}
+body .Header{
+	grid-area: Header;
+	margin-bottom: $EspacioPequeno;
+	#LogoNavbar{
+		font-family: 'Asap';
+		font-weight: $Negrita;
+		font-size: $TextoPequeno;
+		color: $ColorLogo;
+		mix-blend-mode: multiply;}
+	
+.nav-item{
+	font-family: 'Roboto';
+	font-size: $TextoPequeno;}}
+
+body .TituloPrincipal{
+	grid-area: TituloPrincipal;}
+
+body .ContenidoPrincipal{
+		width: 100%;
+		grid-area: ContenidoPrincipal;
+		padding: 0;
+	.TituloIndex{
+		font-family: 'asap';
+		font-weight: $Regular;
+		font-size: $TextoMedio;
+		margin-top: $EspacioPequeno;
+		mix-blend-mode: multiply;}
+	.TextoQueNosDiferencia{
+		width: 88%;
+		font-family: 'roboto';
+		font-weight: $Light;
+		font-size: $TextoCuerpo;
+		padding-bottom: $EspacioPequeno;
+		padding-top: $EspacioPequeno;}
+	.SubTitulo{
+		font-family: 'roboto';
+		font-weight: $Regular;
+		font-size: $TextoPequeno;
+		margin-bottom: $EspacioPequeno;}
+	#ContenedorSimbolos{
+		margin-bottom: $EspacioPequeno;
+		mix-blend-mode: multiply;
+		#Simbolo1{
+			width: $Cuadrado*3;
+			height: $Cuadrado*1;
+			background-image: url("../Recursos/Card1.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+		#Simbolo2{
+			width: $Cuadrado*3;
+			height: $Cuadrado*1;
+			background-image: url("../Recursos/Card2.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+	
+		#Simbolo3{
+			width: $Cuadrado*3;
+			height: $Cuadrado*1;
+			background-image: url("../Recursos/Card3.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+		#Simbolo4{
+			width: $Cuadrado*3;
+			height: $Cuadrado*1;
+			background-image: url("../Recursos/Card4.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}}
+	#Boton{
+		border-color: #e7e7e7;
+	  	color: black;
+		font-size: $TextoCuerpo;
+	  	padding: $EspacioPequeno $EspacioMedio;
+	  	text-align: center;
+	  	text-decoration: none;
+	  	display: inline-block;
+	  	margin: 4px 2px;
+	  	cursor: pointer;
+	 	border-radius: 30px;}
+	#Boton:hover {
+  		background: #e7e7e7;}
+	#ContenedorImagen{
+		position: relative;
+		height: 50vh;
+		overflow: hidden;
+		padding: 0;
+		#ImagenFondo{
+		background-image: url("../Recursos/ImagenHuevoPequeña.png");
+		background-size: cover;
+		width: auto;
+		height: 550px;
+		mix-blend-mode:multiply;}}}}
+
+
+
+
+@media (min-width: 576px) and (max-width: 1199px){
+	
+.SeccionesIndex{
+	display: grid;
+	grid-template-areas:
+		"Header"
+		"TituloPrincipal"
+		"ContenidoPrincipal";
+	grid-template-columns: 100vw;
+	grid-template-rows: auto auto 100vh;
+	justify-content: center;}
+.FondoSombra{
+	background-image: url("../Recursos/Sombra7.png");
+	background-blend-mode: multiply;
+	background-position: top;
+	background-size: cover;}
+
+body .Header{
+	grid-area: Header;
+	margin-bottom: $EspacioGrande;
+	#LogoNavbar{
+		font-family: 'Asap';
+		font-weight: $Negrita;
+		font-size: $TextoMedio;
+		color: $ColorLogo;
+		mix-blend-mode: multiply;}
+	
+.nav-item{
+	font-family: 'Roboto';
+	font-size: $TextoPequeno;
+	}}
+
+body .TituloPrincipal{
+	grid-area: TituloPrincipal;}
+
+body .ContenidoPrincipal{
+		width: 100%;
+		grid-area: ContenidoPrincipal;
+	.TituloIndex{
+		font-family: 'asap';
+		font-weight: $Regular;
+		font-size: $TextoMuyGrande;
+		margin-top: $EspacioGrande;
+		mix-blend-mode: multiply;}
+	.TextoQueNosDiferencia{
+		width: 88%;
+		font-family: 'roboto';
+		font-weight: $Light;
+		font-size: $TextoCuerpo;
+		padding-bottom: $EspacioPequeno;
+		padding-top: $EspacioPequeno;}
+	.SubTitulo{
+		font-family: 'roboto';
+		font-weight: $Regular;
+		font-size: $TextoMedio;
+		margin-bottom: $EspacioMedio;}
+	#ContenedorSimbolos{
+		margin-bottom: $EspacioGrande;
+		mix-blend-mode: multiply;
+		#Simbolo1{
+			width: $Cuadrado*1.5;
+			height: $Cuadrado*1.5;
+			background-image: url("../Recursos/Card1.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+		#Simbolo2{
+			width: $Cuadrado*1.5;
+			height: $Cuadrado*1.5;
+			background-image: url("../Recursos/Card2.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+	
+		#Simbolo3{
+			width: $Cuadrado*1.5;
+			height: $Cuadrado*1.5;
+			background-image: url("../Recursos/Card3.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+		#Simbolo4{
+			width: $Cuadrado*1.5;
+			height: $Cuadrado*1.5;
+			background-image: url("../Recursos/Card4.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}}
+	#Boton{
+		border-color: #e7e7e7;
+	  	color: black;
+		font-size: $TextoPequeno;
+	  	padding: $EspacioPequeno $EspacioMedio;
+	  	text-align: center;
+	  	text-decoration: none;
+	  	display: inline-block;
+	  	margin: 4px 2px;
+	  	cursor: pointer;
+	 	border-radius: 40px;}
+	#Boton:hover {
+  		background: #e7e7e7;}
+	#ContenedorImagen{
+		position: relative;
+		height: 100vh;
+		overflow: hidden;
+		#ImagenFondo{
+		background-image: url("../Recursos/ImagenHuevo.png");
+		background-size: cover;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top:0%;
+		bottom: -5px;
+		right: -5px;
+		mix-blend-mode:multiply;}}}}
+
+
+
+@media (min-width: 1200px){
+	
+.SeccionesIndex{
+	display: grid;
+	grid-template-areas:
+		"Header"
+		"TituloPrincipal"
+		"ContenidoPrincipal";
+	grid-template-columns: 100vw;
+	grid-template-rows: auto auto 100vh;
+	justify-content: center;}
+.FondoSombra{
+	background-image: url("../Recursos/Sombra7.png");
+	background-blend-mode:multiply;
+	background-position: top;}
+.FondoSombra{
+	animation-name: AnimarSombra;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;}
+@keyframes AnimarSombra {
+    0%{ background-position: 0 0;}
+	25% { background-position: 25% 0;}
+	50% { background-position: 15% 0;}
+	75% { background-position: 30% 0;}
+	100% { background-position: 0 0;}}
+
+body .Header{
+	grid-area: Header;
+	margin-bottom: $EspacioGrande;
+	#LogoNavbar{
+		font-family: 'Asap';
+		font-weight: $Negrita;
+		font-size: $TextoPequeno;
+		color: $ColorLogo;
+		mix-blend-mode: multiply;}
+	
+.nav-item{
+	font-family: 'Roboto';
+	font-size: $TextoCuerpo;}}
+
+body .TituloPrincipal{
+	grid-area: TituloPrincipal;}
+
+body .ContenidoPrincipal{
+		width: 100%;
+		grid-area: ContenidoPrincipal;
+	.TituloIndex{
+		font-family: 'asap';
+		font-weight: $Regular;
+		font-size: $TextoMuyGrande;
+		margin-top: $EspacioPequeno;
+		mix-blend-mode: multiply;}
+	.TextoQueNosDiferencia{
+		width: 88%;
+		font-family: 'roboto';
+		font-weight: $Light;
+		font-size: $TextoCuerpo;
+		padding-bottom: $EspacioPequeno;
+		padding-top: $EspacioPequeno;}
+	.SubTitulo{
+		font-family: 'roboto';
+		font-weight: $Regular;
+		font-size: $TextoPequeno;
+		margin-bottom: $EspacioMedio;}
+	#ContenedorSimbolos{
+		margin-bottom: $EspacioMedio;
+		mix-blend-mode: multiply;
+		#Simbolo1{
+			width: $Cuadrado;
+			height: $Cuadrado;
+			background-image: url("../Recursos/Card1.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+		#Simbolo2{
+			width: $Cuadrado;
+			height: $Cuadrado;
+			background-image: url("../Recursos/Card2.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+	
+		#Simbolo3{
+			width: $Cuadrado;
+			height: $Cuadrado;
+			background-image: url("../Recursos/Card3.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}
+		#Simbolo4{
+			width: $Cuadrado;
+			height: $Cuadrado;
+			background-image: url("../Recursos/Card4.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;}}
+	#Boton{
+		border-color: #e7e7e7;
+	  	color: black;
+	  	padding: $EspacioPequeno $EspacioMedio;
+	  	text-align: center;
+	  	text-decoration: none;
+	  	display: inline-block;
+	  	margin: 4px 2px;
+	  	cursor: pointer;
+	 	border-radius: 30px;}
+	#Boton:hover {
+  		background: #e7e7e7;}
+	#ContenedorImagen{
+		position: relative;
+		height: 100vh;
+		overflow: hidden;
+		#ImagenFondo{
+		background-image: url("../Recursos/ImagenHuevo.png");
+		background-size: cover;
+		padding-right: 0px;
+		padding-bottom: 0px;
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top:0%;
+		bottom: -5px;
+		right: -5px;
+		mix-blend-mode: multiply;}}}}
+	
+	
+
+
