@@ -23,7 +23,7 @@ body .TituloPrincipal{
 	grid-area: TituloPrincipal;
 }
 body .ContenidoPrincipal{
-	width: 100%;
+	width: 100vw;
 	grid-area: ContenidoPrincipal;
 }
 body .Footer{
@@ -42,58 +42,77 @@ body .Footer{
 	padding-top: 40px;
 }
 
+
 .TituloPrincipal{
 	font-family: 'Asap', sans-serif;
 	text-align: center;
-	font-size: 24px;
-	margin-bottom: 20px;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
-#Huevo1{
+.Huevo1{
 	background-image: url("../Recursos/HuevoLibre.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 300px;
-	width: 300px;;
+	height: 250px;
+	width: 250px;;
 }
 
-#Huevo2{
+.Huevo2{
 	background-image: url("../Recursos/HuevoBlanco.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 300px;
-	width: 300px;;
+	height: 250px;
+	width: 250px;;
 }
 
-#Huevo3{
+.Huevo3{
 	background-image: url("../Recursos/HuevoCafe.png");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 300px;
-	width: 300px;
+	height: 250px;
+	width: 250px;
+}
+.Huevo4{
+	background-image: url("../Recursos/HuevoCafe2.png");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 250px;
 }
 
 .TextoHuevo{
 	padding-top: 20px;
+	padding-bottom: 0px;
 	font-family: Roboto;
 	font-size: 18px;
+	font-weight: 400;
+}
+
+.TituloTabla{
+	margin-top: 80px;
+	margin-bottom: 40px;
+	font-family: Roboto;
+	font-size: 32px;
+	font-weight: 400;
+}
+.TituloTabla2{
+	margin-top: 80px;
+	margin-bottom: 40px;
+	font-family: Roboto;
+	font-size: 24px;
 	font-weight: 400;
 }
 /*--------------------------------------------------------------------------------------------------*/
 
 /* PAGINA NOSOTROS*/
-
-.ContenidoNosotros{
-	display: flex;
-	flex-direction: row;
-	width: 99vw;
-	height: auto;
-	margin-top: 20px;
-	justify-content: center;
-}
 
 .Articulo1{
 	width: 600px;
@@ -105,23 +124,321 @@ body .Footer{
 .Articulo2{
 	margin-left: 20px;
 }
-#ImagenNosotros{
-	width: 600px;
-	height: 400px;
-	border-radius: 40px;
+.ImagenNosotros{
+	height: 300px;
+	border-radius: 10px;
 	background-image: url("../Recursos/ImagenHuevos.jpg");
 	background-size: cover;
 }
 
+.TextoNosotros{
+	padding-top: 40px;
+	padding-bottom: 0px;
+	font-family: Roboto;
+	text-align: justify;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.SubtituloNosotros{
+	padding-top: 40px;
+	padding-bottom: 0px;
+	font-family: Roboto;
+	text-align: justify;
+	font-size: 32px;
+	font-weight: 400;
+	color: #FF8000;
+}
+
+.ImagenNosotros2{
+	width: auto;
+	height: 300px;
+	border-radius: 20px;
+	background-image: url("../Recursos/ImagenHuevos.jpg");
+	background-size: cover;
+}
 /*--------------------------------------------------------------------------------------------------*/
 
 /* PAGINA RECETAS*/
 
+@media (min-width: 0px) and (max-width: 991px) {
+	
+.TodasLasRecetas{
+	width: 100vw;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+}
+
+.EspacioDescripcion{
+	height:60px;
+	background-color: #F6F6F6;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.Descripcion{
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.TamanoReceta1{
+	opacity: 100%;
+	height: 240px;
+	margin-top: 0px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta1:hover{
+	opacity: 20%;
+	height: 260px;
+}
+.TamanoReceta2{
+	opacity: 100%;
+	height: 340px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta2:hover{
+	opacity: 20%;
+	height: 360px;
+}
+.TamanoReceta3{
+	opacity: 100%;
+	height: 300px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta3:hover{
+	opacity: 20%;
+	height: 320px;
+}
+.TamanoReceta4{
+	opacity: 100%;
+	height: 220px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta4:hover{
+	opacity: 20%;
+	height: 240px;
+}
+#GrupoRecetas{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 1100px;
+}
+#GrupoRecetas .Receta1, #GrupoRecetas .Receta2, #GrupoRecetas .Receta3 {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 40px;
+}
+
+#GrupoRecetas2{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-top: 0px;
+	margin-left: 10%;
+	height: 1100px;
+}
+#GrupoRecetas2 .Receta4, #GrupoRecetas2 .Receta5, #GrupoRecetas2 .Receta6 {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 40px;
+}
+
+#GrupoRecetas3{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 1100px;
+}
+#GrupoRecetas3 .Receta7, #GrupoRecetas3 .Receta8, #GrupoRecetas3 .Receta9 {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 40px;
+}
+
+#GrupoRecetas4{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 1100px;
+}
+#GrupoRecetas4 .Receta10, #GrupoRecetas4 .Receta11, #GrupoRecetas4 .Receta12 {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 40px;
+}
+
+#GrupoRecetas5{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 1100;
+}
+#GrupoRecetas5 .Receta13, #GrupoRecetas5 .Receta14, #GrupoRecetas5 .Receta15 {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 40px;
+}
+
+/* IMAGENES RECETAS */
+
+#ImagenReceta1{
+	background-image: url("../Recursos/Receta1.jpg");
+	background-size:cover;
+}
+
+#ImagenReceta2{
+	background-image: url("../Recursos/Receta2.jpg");
+	background-size:cover;
+}
+#ImagenReceta3{
+	background-image: url("../Recursos/Receta3.jpg");
+	background-size:cover;
+}
+
+#ImagenReceta4{
+	background-image: url("../Recursos/Receta4.jpg");
+	background-size:cover;
+}
+#ImagenReceta5{
+	background-image: url("../Recursos/Receta5.jpg");
+	background-size:cover;
+}
+#ImagenReceta6{
+	background-image: url("../Recursos/Receta6.jpg");
+	background-size:cover;
+}
+#ImagenReceta7{
+	background-image: url("../Recursos/Receta7.jpg");
+	background-size:cover;
+}
+#ImagenReceta8{
+	background-image: url("../Recursos/Receta8.jpg");
+	background-size:cover;
+}
+#ImagenReceta9{
+	background-image: url("../Recursos/Receta9.jpg");
+	background-size:cover;
+}
+#ImagenReceta10{
+	background-image: url("../Recursos/Receta10.jpg");
+	background-size:cover;
+}
+#ImagenReceta11{
+	background-image: url("../Recursos/Receta11.jpg");
+	background-size:cover;
+}
+#ImagenReceta12{
+	background-image: url("../Recursos/Receta12.jpg");
+	background-size:cover;
+}
+#ImagenReceta13{
+	background-image: url("../Recursos/Receta13.jpg");
+	background-size:cover;
+}
+#ImagenReceta14{
+	background-image: url("../Recursos/Receta14.jpg");
+	background-size:cover;
+}
+#ImagenReceta15{
+	background-image: url("../Recursos/Receta15.jpg");
+	background-size:cover;
+}
+}
+	
+
+
+@media (min-width: 992px) {
 .TodasLasRecetas{
 	width: 100vw;
 	display: flex;
 	flex-direction: row; 
 	justify-content: center;
+}
+
+.EspacioDescripcion{
+	height:60px;
+	background-color: #F6F6F6;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.Descripcion{
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.TamanoReceta1{
+	opacity: 100%;
+	height: 240px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta1:hover{
+	opacity: 20%;
+	height: 260px;
+}
+.TamanoReceta2{
+	opacity: 100%;
+	height: 340px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta2:hover{
+	opacity: 20%;
+	height: 360px;
+}
+.TamanoReceta3{
+	opacity: 100%;
+	height: 300px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta3:hover{
+	opacity: 20%;
+	height: 320px;
+}
+.TamanoReceta4{
+	opacity: 100%;
+	height: 220px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: opacity, height 0.5s;
+}
+.TamanoReceta4:hover{
+	opacity: 20%;
+	height: 240px;
 }
 #GrupoRecetas{
 	display: flex;
@@ -135,35 +452,6 @@ body .Footer{
 	margin-left: 10px;
 	border-radius: 40px;
 }
-.Receta1{
-	opacity: 100%;
-	height: 300px;
-	transition: opacity, height 0.5s;
-}
-.Receta1:hover{
-	opacity: 20%;
-	height: 320px;
-}
-.Receta2{
-	opacity: 100%;
-	height: 400px;
-	transition: opacity, height 0.5s;
-}
-.Receta2:hover{
-	opacity: 20%;
-	height: 420px;
-}
-.Receta3{
-	opacity: 100%;
-	height: 300px;
-	transition: opacity, height 0.5s;
-}
-.Receta3:hover{
-	opacity: 20%;
-	height: 320px;
-}
-
-
 
 #GrupoRecetas2{
 	display: flex;
@@ -177,36 +465,6 @@ body .Footer{
 	margin-left: 10px;
 	border-radius: 40px;
 }
-.Receta4{
-	opacity: 100%;
-	height: 360px;
-	transition: opacity, height 0.5s;
-}
-.Receta4:hover{
-	opacity: 20%;
-	height: 380px;
-}
-.Receta5{
-	opacity: 100%;
-	height: 280px;
-	transition: opacity, height 0.5s;
-}
-.Receta5:hover{
-	opacity: 20%;
-	height: 300px;
-}
-.Receta6{
-	opacity: 100%;
-	height: 360px;
-	transition: opacity, height 0.5s;
-}
-.Receta6:hover{
-	opacity: 20%;
-	height: 380px;
-}
-
-
-
 
 #GrupoRecetas3{
 	display: flex;
@@ -220,35 +478,6 @@ body .Footer{
 	margin-left: 10px;
 	border-radius: 40px;
 }
-.Receta7{
-	opacity: 100%;
-	height: 300px;
-	transition: opacity, height 0.5s;
-}
-.Receta7:hover{
-	opacity: 20%;
-	height: 320px;
-}
-.Receta8{
-	opacity: 100%;
-	height: 400px;
-	transition: opacity, height 0.5s;
-}
-.Receta8:hover{
-	opacity: 20%;
-	height: 420px;
-}
-.Receta9{
-	opacity: 100%;
-	height: 300px;
-	transition: opacity, height 0.5s;
-}
-.Receta9:hover{
-	opacity: 20%;
-	height: 320px;
-}
-
-
 
 #GrupoRecetas4{
 	display: flex;
@@ -262,35 +491,6 @@ body .Footer{
 	margin-left: 10px;
 	border-radius: 40px;
 }
-.Receta10{
-	opacity: 100%;
-	height: 360px;
-	transition: opacity, height 0.5s;
-}
-.Receta10:hover{
-	opacity: 20%;
-	height: 380px;
-}
-.Receta11{
-	opacity: 100%;
-	height: 280px;
-	transition: opacity, height 0.5s;
-}
-.Receta11:hover{
-	opacity: 20%;
-	height: 300px;
-}
-.Receta12{
-	opacity: 100%;
-	height: 360px;
-	transition: opacity, height 0.5s;
-}
-.Receta12:hover{
-	opacity: 20%;
-	height: 380px;
-}
-
-
 
 #GrupoRecetas5{
 	display: flex;
@@ -304,126 +504,92 @@ body .Footer{
 	margin-left: 10px;
 	border-radius: 40px;
 }
-.Receta13{
-	opacity: 100%;
-	height: 300px;
-	transition: opacity, height 0.5s;
-}
-.Receta13:hover{
-	opacity: 20%;
-	height: 320px;
-}
-.Receta14{
-	opacity: 100%;
-	height: 400px;
-	transition: opacity, height 0.5s;
-}
-.Receta14:hover{
-	opacity: 20%;
-	height: 420px;
-}
-.Receta15{
-	opacity: 100%;
-	height: 300px;
-	transition: opacity, height 0.5s;
-}
-.Receta15:hover{
-	opacity: 20%;
-	height: 320px;
-}
-
 
 /* IMAGENES RECETAS */
 
-.Receta1{
+#ImagenReceta1{
 	background-image: url("../Recursos/Receta1.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta2{
+
+#ImagenReceta2{
 	background-image: url("../Recursos/Receta2.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta3{
+#ImagenReceta3{
 	background-image: url("../Recursos/Receta3.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta4{
+
+#ImagenReceta4{
 	background-image: url("../Recursos/Receta4.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta5{
+#ImagenReceta5{
 	background-image: url("../Recursos/Receta5.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta6{
+#ImagenReceta6{
 	background-image: url("../Recursos/Receta6.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta7{
+#ImagenReceta7{
 	background-image: url("../Recursos/Receta7.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta8{
+#ImagenReceta8{
 	background-image: url("../Recursos/Receta8.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta9{
+#ImagenReceta9{
 	background-image: url("../Recursos/Receta9.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta10{
+#ImagenReceta10{
 	background-image: url("../Recursos/Receta10.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta11{
+#ImagenReceta11{
 	background-image: url("../Recursos/Receta11.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta12{
+#ImagenReceta12{
 	background-image: url("../Recursos/Receta12.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta13{
+#ImagenReceta13{
 	background-image: url("../Recursos/Receta13.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta14{
+#ImagenReceta14{
 	background-image: url("../Recursos/Receta14.jpg");
-	flex-grow: 1;
 	background-size:cover;
 }
-.Receta15{
+#ImagenReceta15{
 	background-image: url("../Recursos/Receta15.jpg");
-	flex-grow: 1;
 	background-size:cover;
+}
 }
 
 /*--------------------------------------------------------------------------------------------------*/
 
 /* PAGINA CONTACTO*/
 
+.FondoContacto{
+	background-image:url("../Recursos/FondoHuevos.jpg");
+	background-size: cover;
+}
 .ContenidoContacto{
 	display: flex;
 	flex-direction: row;
-	width: 100vw;
-	height: auto;
+	width: auto;
+	height: 100vh;
 	justify-content: center;
 }
 .CuadroContacto{
 	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
 	width: 500px;
 	height: 550px;
 }
@@ -441,6 +607,7 @@ body .Footer{
 	margin-top: 100px;
 	height: 55px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 	background-image: linear-gradient(to left, #FF7700, #F1DB4B);

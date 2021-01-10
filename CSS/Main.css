@@ -38,7 +38,7 @@
     body .ContenidoPrincipal .TextoQueNosDiferencia {
       width: 88%;
       font-family: 'roboto';
-      font-weight: 300;
+      font-weight: 400;
       font-size: 18px;
       padding-bottom: 15px;
       padding-top: 15px; }
@@ -48,7 +48,7 @@
       font-size: 24px;
       margin-bottom: 15px; }
     body .ContenidoPrincipal #ContenedorSimbolos {
-      margin-bottom: 15px;
+      margin-bottom: 50px;
       mix-blend-mode: multiply; }
       body .ContenidoPrincipal #ContenedorSimbolos #Simbolo1 {
         width: 300px;
@@ -81,14 +81,16 @@
     body .ContenidoPrincipal #Boton {
       border-color: #e7e7e7;
       color: black;
-      font-size: 18px;
+      width: 200px;
+      font-family: 'roboto';
+      font-weight: 400;
       padding: 15px 25px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       margin: 4px 2px;
       cursor: pointer;
-      border-radius: 30px; }
+      border-radius: 10px; }
     body .ContenidoPrincipal #Boton:hover {
       background: #e7e7e7; }
     body .ContenidoPrincipal #ContenedorImagen {
@@ -141,7 +143,7 @@
     body .ContenidoPrincipal .TextoQueNosDiferencia {
       width: 88%;
       font-family: 'roboto';
-      font-weight: 300;
+      font-weight: 400;
       font-size: 18px;
       padding-bottom: 15px;
       padding-top: 15px; }
@@ -184,14 +186,16 @@
     body .ContenidoPrincipal #Boton {
       border-color: #e7e7e7;
       color: black;
-      font-size: 24px;
+      width: 200px;
+      font-family: 'roboto';
+      font-weight: 400;
       padding: 15px 25px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       margin: 4px 2px;
       cursor: pointer;
-      border-radius: 40px; }
+      border-radius: 10px; }
     body .ContenidoPrincipal #Boton:hover {
       background: #e7e7e7; }
     body .ContenidoPrincipal #ContenedorImagen {
@@ -263,7 +267,7 @@
     body .ContenidoPrincipal .TextoQueNosDiferencia {
       width: 88%;
       font-family: 'roboto';
-      font-weight: 300;
+      font-weight: 400;
       font-size: 18px;
       padding-bottom: 15px;
       padding-top: 15px; }
@@ -306,13 +310,16 @@
     body .ContenidoPrincipal #Boton {
       border-color: #e7e7e7;
       color: black;
+      width: 200px;
+      font-family: 'roboto';
+      font-weight: 400;
       padding: 15px 25px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       margin: 4px 2px;
       cursor: pointer;
-      border-radius: 30px; }
+      border-radius: 10px; }
     body .ContenidoPrincipal #Boton:hover {
       background: #e7e7e7; }
     body .ContenidoPrincipal #ContenedorImagen {
@@ -331,3 +338,10 @@
         bottom: -5px;
         right: -5px;
         mix-blend-mode: multiply; } }
+
+.SeccionesPagina {
+  display: grid;
+  grid-template-areas: "Header" "TituloPrincipal" "ContenidoPrincipal" "Footer";
+  grid-template-columns: 100vw;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center; }

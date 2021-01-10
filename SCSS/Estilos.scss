@@ -8,7 +8,6 @@ $TextoPequeno:24px;
 $TextoCuerpo:18px;
 $Negrita: 600;
 $Regular: 400;
-$Light: 300;
 $EspacioGrande: 50px;
 $EspacioMedio: 25px;
 $EspacioPequeno: 15px;
@@ -62,7 +61,7 @@ body .ContenidoPrincipal{
 	.TextoQueNosDiferencia{
 		width: 88%;
 		font-family: 'roboto';
-		font-weight: $Light;
+		font-weight: $Regular;
 		font-size: $TextoCuerpo;
 		padding-bottom: $EspacioPequeno;
 		padding-top: $EspacioPequeno;}
@@ -72,7 +71,7 @@ body .ContenidoPrincipal{
 		font-size: $TextoPequeno;
 		margin-bottom: $EspacioPequeno;}
 	#ContenedorSimbolos{
-		margin-bottom: $EspacioPequeno;
+		margin-bottom: $EspacioGrande;
 		mix-blend-mode: multiply;
 		#Simbolo1{
 			width: $Cuadrado*3;
@@ -106,14 +105,16 @@ body .ContenidoPrincipal{
 	#Boton{
 		border-color: #e7e7e7;
 	  	color: black;
-		font-size: $TextoCuerpo;
+		width: 200px;
+		font-family: 'roboto';
+		font-weight: $Regular;
 	  	padding: $EspacioPequeno $EspacioMedio;
 	  	text-align: center;
 	  	text-decoration: none;
 	  	display: inline-block;
 	  	margin: 4px 2px;
 	  	cursor: pointer;
-	 	border-radius: 30px;}
+	 	border-radius: 10px;}
 	#Boton:hover {
   		background: #e7e7e7;}
 	#ContenedorImagen{
@@ -178,7 +179,7 @@ body .ContenidoPrincipal{
 	.TextoQueNosDiferencia{
 		width: 88%;
 		font-family: 'roboto';
-		font-weight: $Light;
+		font-weight: $Regular;
 		font-size: $TextoCuerpo;
 		padding-bottom: $EspacioPequeno;
 		padding-top: $EspacioPequeno;}
@@ -222,14 +223,16 @@ body .ContenidoPrincipal{
 	#Boton{
 		border-color: #e7e7e7;
 	  	color: black;
-		font-size: $TextoPequeno;
+		width: 200px;
+		font-family: 'roboto';
+		font-weight: $Regular;
 	  	padding: $EspacioPequeno $EspacioMedio;
 	  	text-align: center;
 	  	text-decoration: none;
 	  	display: inline-block;
 	  	margin: 4px 2px;
 	  	cursor: pointer;
-	 	border-radius: 40px;}
+	 	border-radius: 10px;}
 	#Boton:hover {
   		background: #e7e7e7;}
 	#ContenedorImagen{
@@ -306,7 +309,7 @@ body .ContenidoPrincipal{
 	.TextoQueNosDiferencia{
 		width: 88%;
 		font-family: 'roboto';
-		font-weight: $Light;
+		font-weight: $Regular;
 		font-size: $TextoCuerpo;
 		padding-bottom: $EspacioPequeno;
 		padding-top: $EspacioPequeno;}
@@ -350,13 +353,16 @@ body .ContenidoPrincipal{
 	#Boton{
 		border-color: #e7e7e7;
 	  	color: black;
+		width: 200px;
+		font-family: 'roboto';
+		font-weight: $Regular;
 	  	padding: $EspacioPequeno $EspacioMedio;
 	  	text-align: center;
 	  	text-decoration: none;
 	  	display: inline-block;
 	  	margin: 4px 2px;
 	  	cursor: pointer;
-	 	border-radius: 30px;}
+	 	border-radius: 10px;}
 	#Boton:hover {
   		background: #e7e7e7;}
 	#ContenedorImagen{
@@ -376,6 +382,16 @@ body .ContenidoPrincipal{
 		right: -5px;
 		mix-blend-mode: multiply;}}}}
 	
-	
+	.SeccionesPagina{
+	display: grid;
+	grid-template-areas:
+		"Header"
+		"TituloPrincipal"
+		"ContenidoPrincipal"
+		"Footer";
+	grid-template-columns: 100vw;
+	grid-template-rows: auto auto auto auto;
+	justify-content: center;
+}
 
 
